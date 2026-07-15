@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>24 点游戏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>24 点游戏</h1>
+    <p class="lead">使用给定的 4 个数字，通过 + - * / 和括号得到 24。每个数字必须且只能用一次。</p>
+
+    <div id="numbers" class="numbers"></div>
+
+    <div class="controls">
+      <button id="btn-next">下一题</button>
+      <button id="btn-ans">显示答案</button>
+      <button id="btn-random">随机生成（直到有解）</button>
+    </div>
+
+    <div class="play">
+      <input id="expr" placeholder="在此输入表达式，例如 (3+3)*(4+0)" />
+      <button id="btn-check">提交</button>
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+
+    <section class="solutions" id="solutions" hidden>
+      <h2>解答（从简到难）</h2>
+      <ul id="sol-list"></ul>
+    </section>
+
+    <footer>
+      <small>静态页面 - 托管于 GitHub Pages</small>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
