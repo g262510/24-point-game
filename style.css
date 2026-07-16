@@ -5,12 +5,19 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
 .container{max-width:760px;margin:3rem auto;padding:1.25rem;background:var(--card);box-shadow:0 6px 18px rgba(13,38,76,0.08);border-radius:8px}
 h1{margin-top:0}
 .lead{color:var(--muted)}
+.status{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem;color:#111;font-weight:700}
+.status div{background:#eef6ff;border:1px solid #d8e9ff;padding:.75rem 1rem;border-radius:8px}
+.example{margin:1.5rem 0;padding:1rem;border:1px solid #d0d6de;border-radius:10px;background:#f5f9ff}
+.example h2{margin-top:0}
+.example-code{display:inline-block;background:#fff;border:1px solid #d0d6de;border-radius:6px;padding:.35rem .7rem;font-family:Menlo,Consolas,Monaco,monospace}
+.example-note{color:#555;margin-top:.75rem;font-size:.95rem}
 .numbers{display:flex;gap:.75rem;margin:1rem 0}
 .numbers .num{background:#eef6ff;border:1px solid #d8e9ff;padding:.6rem .9rem;border-radius:6px;font-weight:700;font-size:1.25rem}
-.controls{display:flex;gap:.5rem;margin-bottom:1rem}
+.controls{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
 .controls button{padding:.5rem .8rem;border-radius:6px;border:1px solid #d0d6de;background:white;cursor:pointer}
 .play{display:flex;gap:.5rem}
 .play input{flex:1;padding:.6rem;border-radius:6px;border:1px solid #d0d6de}
+.example button{margin-top:.75rem;padding:.45rem .75rem;border-radius:6px;border:1px solid #d0d6de;background:white;cursor:pointer}
 .feedback{margin-top:1rem;font-weight:600}
 .solutions{margin-top:1rem}
 .solutions ul{padding-left:1.2rem}
