@@ -11,6 +11,22 @@
     <h1>24 点游戏</h1>
     <p class="lead">使用给定的 4 个数字，通过 + - * / 和括号得到 24。每个数字必须且只能用一次。</p>
 
+    <div class="status">
+      <div>得分: <span id="score">0</span></div>
+      <div>连对: <span id="streak">0</span></div>
+    </div>
+
+    <section class="example" id="example">
+      <h2>示例（只有一种答案）</h2>
+      <p>示例题目：<strong>1, 1, 1, 8</strong></p>
+      <p>规范表达式示例：</p>
+      <code class="example-code" id="example-text">8*(1+(1+1))</code>
+      <div>
+        <button id="btn-prefill">复制示例表达式到输入框</button>
+      </div>
+      <p class="example-note">实际出题时会避开这个示例题目，避免题目与示例重复。</p>
+    </section>
+
     <div id="numbers" class="numbers"></div>
 
     <div class="controls">
